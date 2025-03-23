@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import StellarSdk, { xdr } from 'stellar-sdk';
+import StellarSdk from 'stellar-sdk';
 import { handleApiError } from '@/lib/errorHandler';
 
 const server = new StellarSdk.Horizon.Server('https://horizon-testnet.stellar.org');
@@ -7,8 +7,6 @@ const server = new StellarSdk.Horizon.Server('https://horizon-testnet.stellar.or
 export async function POST(request: NextRequest) {
     try {
         const { address } = await request.json();
-
-        console.log('address', address);
 
         // Create the asset object
         const asset = new StellarSdk.Asset(
@@ -31,8 +29,8 @@ export async function POST(request: NextRequest) {
             .build();
 
         // Generate the XDR format of the transaction
-        // const xdr = transaction.toXDR();
-        // transaction.toXDR();
+        const xdr = transaction.toXDR();
+        transaction.toXDR();
 
         return NextResponse.json({
             success: true,

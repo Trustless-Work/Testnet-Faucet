@@ -30,6 +30,7 @@ export async function POST(request: NextRequest) {
 
         // Generate the XDR format of the transaction
         const xdr = transaction.toXDR();
+        transaction.toXDR();
 
         return NextResponse.json({
             success: true,

@@ -37,7 +37,7 @@ const HowToUseFaucet = () => {
             <section className="space-y-6">
               <h2 className="text-2xl font-semibold tracking-tight border-b border-gray-200 pb-2">Steps to Request Tokens</h2>
               <ol className="list-decimal pl-6 space-y-2">
-                <li>Enter your Stellar wallet address.</li>
+                <li>Enter your connected Stellar wallet address.</li>
                 <li>Select the desired amount (10, 25, or 50 tokens).</li>
                 <li>Click the &quot;Request Tokens&quot; button.</li>
                 <li>Check your wallet balance in the Stellar testnet explorer.</li>

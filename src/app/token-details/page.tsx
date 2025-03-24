@@ -71,7 +71,7 @@ const TokenDetailsPage = () => {
                       
                       <div className="space-y-2">
                         <h3 className="text-sm font-medium text-muted-foreground">Total Supply</h3>
-                        <p className="text-lg font-semibold">1,000,000,000 TRUST</p>
+                        <p className="text-lg font-semibold">100,000,000,000 TRUST</p>
                       </div>
                     </div>
                   </CardContent>
